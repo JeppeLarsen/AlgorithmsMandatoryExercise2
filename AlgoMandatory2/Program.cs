@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -14,57 +15,42 @@ namespace AlgoMandatory2
 
             string[] inputList = ind.Trim().Split(' ');
 
-            for (int i = 0; i < inputList.Length; i++)
+            Stack output = new Stack();
+            long moveCount = 0;
+            foreach (string input in inputList)
             {
-                if (inputList[i].Equals("^"))
+                try
                 {
-                    if (int.TryParse(inputList[i - 1], out int moveCount))
+                    if (input.Equals("^"))
                     {
-                        for (int j = i + 1; j < inputList.Length; j++)
+                        string pop = output.Pop().ToString();
+                        if (long.TryParse(pop, out long i))
                         {
-                            if (int.TryParse(inputList[j], out int k) || inputList[j].Equals("^"))
-                            {
-                                continue;
-                            }
-
-                            char c = inputList[j].ToCharArray()[0];
-                            int move = (((c + moveCount) - 65) % 26) + 65;
-                            c = (char) move;
-                            inputList[j] = c.ToString();
+                            moveCount += i;
+                            moveCount = moveCount % 26;
                         }
                     }
-
-                    inputList = RemoveFromArray(inputList, i);
-                    inputList = RemoveFromArray(inputList, i - 1);
-
-                    i -= 2;
+                    else
+                    {
+                        if (!long.TryParse(input, out long j))
+                        {
+                            char c = input.ToCharArray()[0];
+                            long move = (((c + moveCount) - 65) % 26) + 65;
+                            c = (char) move;
+                            output.Push(c.ToString());
+                        }
+                        else
+                        {
+                            output.Push(input);
+                        }
+                    }
+                }
+                catch
+                {
                 }
             }
-            
-            // string ud = "";
-            // foreach (string c in inputList)
-            // {
-            //     ud += c + " ";
-            // }
-            // Console.WriteLine(ud);
-            
-            Console.WriteLine(string.Join(' ',inputList));
-        }
 
-        static string[] RemoveFromArray(string[] a, int index)
-        {
-            string[] nArray = new string[a.Length - 1];
-            for (int i = 0; i < index; i++)
-            {
-                nArray[i] = a[i];
-            }
-
-            for (int i = index + 1; i < a.Length; i++)
-            {
-                nArray[i - 1] = a[i];
-            }
-
-            return nArray;
+            Console.WriteLine(string.Join(' ', output.ToArray().Reverse()));
         }
     }
 }
