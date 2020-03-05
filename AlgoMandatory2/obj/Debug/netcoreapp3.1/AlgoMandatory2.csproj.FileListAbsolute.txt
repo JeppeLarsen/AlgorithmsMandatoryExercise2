@@ -1,0 +1,11 @@
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/bin/Debug/netcoreapp3.1/AlgoMandatory2
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/bin/Debug/netcoreapp3.1/AlgoMandatory2.deps.json
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/bin/Debug/netcoreapp3.1/AlgoMandatory2.runtimeconfig.json
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/bin/Debug/netcoreapp3.1/AlgoMandatory2.runtimeconfig.dev.json
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/bin/Debug/netcoreapp3.1/AlgoMandatory2.dll
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/bin/Debug/netcoreapp3.1/AlgoMandatory2.pdb
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/obj/Debug/netcoreapp3.1/AlgoMandatory2.csprojAssemblyReference.cache
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/obj/Debug/netcoreapp3.1/AlgoMandatory2.AssemblyInfoInputs.cache
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/obj/Debug/netcoreapp3.1/AlgoMandatory2.AssemblyInfo.cs
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/obj/Debug/netcoreapp3.1/AlgoMandatory2.dll
+/home/Jeppe/RiderProjects/CSØvelser/AlgoMandatory2/AlgoMandatory2/obj/Debug/netcoreapp3.1/AlgoMandatory2.pdb
