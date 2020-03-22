@@ -1,4 +1,8 @@
 # AlgorithmsMandatoryExercise2
+## The Solution
+This is a solution to a university exercise. See the description of the exercise below.
+
+To begin with we created a solution with bad time complexity caused by 'a loop in a loop', but then we discovered the stack solution that really speeded up the algorithm.
 
 ## The Exercise
 Alan works as a lead developer at Macrosoft. So far he has had an easy time because he found a way to steal the source code from the inventive tinkerers at Dabble. Unfortunately for Alan, Dabble caught on what was going on, and decided to write all their software in the programming language Caesar++. Caesar++ is a programming language built specifically to be hard to read, and must be reverse-engineered in order to be used. Alan needs your help deciphering this new language, so he can keep his job.
@@ -21,31 +25,31 @@ A B C B C D D E F
 
 Similar to how typing on a computer works in real-life, if you have not written anything then typing 'delete' does nothing.
 
-## Input format
+### Input format
 You will get two lines of input:
 
 Line 1: a number N, denoting the number of terms, where N < 10^5
  
 Line 2: N space-separated terms, each being either a capital letter ranging from A-Z, a delete character '^' (without quotes), or a number m, where 0 < m < 10^9 
  
-## Output format
+### Output format
 A single line of space-separated terms, denoting the translated source code.
 
-## Examples
+### Examples
 
-### Input
+#### Input
 
 12
 H E L L O 3 ^ T L O I A
 
-### Output
+#### Output
 
 H E L L O W O R L D
 
-### Input
+#### Input
 
 9
 A B C 1 ^ ^ A B C
 
-### Output
+#### Output
 A B B C D
