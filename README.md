@@ -1,6 +1,7 @@
 # AlgorithmsMandatoryExercise2
 ## The Solution
-This is a solution to a university exercise. See the description of the exercise below.
+This is a solution to a university exercise. See the description of the exercise below.  
+The solution is created in collaboration with Mads Hemer (@Jesdwarf).
 
 To begin with we created a solution with bad time complexity caused by 'a loop in a loop', but then we discovered the stack solution that really speeded up the algorithm.
 
